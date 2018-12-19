@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Restaurants Application</string>
+    <string name="error_msg">Something went wrong, please try again later.</string>
+    <string name="delhi">Delhi</string>
+    <string name="ok">OK</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="city_not_found">No relevant city found for given name.</string>
+</resources>

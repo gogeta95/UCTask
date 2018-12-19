@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="@dimen/restaurant_image_size"
+        android:paddingBottom="@dimen/rating_margin"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/rest_image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/restaurant_image_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@mipmap/ic_launcher"/>
+
+    <TextView
+            android:id="@+id/tv_rest_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Restaurant name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rest_image"
+            style="@style/SingleLineText"/>
+
+    <TextView
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            style="@style/SingleLineText"
+            android:id="@+id/tv_cuisines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Cuisines"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rest_name"/>
+
+    <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="4.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/SingleLineText"
+            android:padding="2dp"
+            android:layout_margin="@dimen/rating_margin"
+            tools:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cuisines"/>
+
+</android.support.constraint.ConstraintLayout>
